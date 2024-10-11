@@ -1,0 +1,68 @@
+/* FAQ Page Styles */
+#faq {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Marquee Styling for FAQ */
+.marquee-container {
+    margin-bottom: 2rem;
+    background-color: #007BFF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.faq-marquee {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* FAQ Grid Layout */
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.faq-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: scale(1.03);
+}
+
+.faq-item h3 {
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-marquee {
+        font-size: 1rem;
+    }
+}
