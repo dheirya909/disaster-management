@@ -182,6 +182,9 @@
         const certificateBtn = document.getElementById('certificate-btn');
         const goBackBtn = document.getElementById('go-back-btn'); // Go Back Button
         const nameInputDiv = document.getElementById('name-input');
+        
+        // Flag to check if the certificate has been generated
+        let certificateGenerated = false;
 
         // Show the name input field when the user clicks the certificate button
         function showNameInput() {
@@ -198,6 +201,11 @@
 
         // Function to generate the certificate
         function generateCertificate() {
+            if (certificateGenerated) {
+                alert('You have already generated your certificate.');
+                return; // Exit if certificate is already generated
+            }
+
             const userName = document.getElementById('user-name').value;
 
             if (userName.trim() === '') {
@@ -223,6 +231,9 @@
 
                 // Save the PDF
                 doc.save('Certificate-' + userName + '.pdf');
+
+                // Set the flag to true to prevent further downloads
+                certificateGenerated = true;
             };
         }
 

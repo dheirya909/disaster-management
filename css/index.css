@@ -43,6 +43,8 @@
   border: none;
   transition: all 0.3s ease;
   animation: fadeInUp 1.5s ease-in-out;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 .btn-start:hover {
