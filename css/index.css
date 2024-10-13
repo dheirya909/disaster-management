@@ -1,7 +1,7 @@
 /* Intro Section with Crypto Design */
 .crypto-design {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #0a2e65, #101d42);
+  background: linear-gradient(135deg, #0c3572, #101d42);
   color: white;
   text-align: left;
   display: flex;
@@ -11,6 +11,7 @@
   position: relative;
   clip-path: ellipse(120% 100% at 50% 0%);
   animation: fadeInUp 1s ease-in-out;
+  margin-top: 2rem;
 }
 
 .crypto-design .container {

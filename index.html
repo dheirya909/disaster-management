@@ -11,6 +11,7 @@
     <nav class="navbar">
         <div class="container">
             <h1>DART</h1>
+            <div class="hamburger">&#9776;</div>
             <ul>
                 <li style="--i:1"><a href="index.html">Home</a></li>
                 <li style="--i:2"><a href="disasters.html">Disasters</a></li>
@@ -78,7 +79,7 @@
                     <div class="quick-access-item">
                         <img src="/images/operator.png" alt="" width="100px" height="auto">
                         <h4>Emergency Contacts</h4>
-                        <p>Key emergency numbers and hotlines for immediate assistance in India.</p>
+                        <p>Key emergency numbers for immediate assistance in India.</p>
                     </div>
                 </div>
             </div>
@@ -117,5 +118,14 @@
             <p>&copy; 2024 Disaster Analysis and Response Team. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.navbar ul');
+      
+        hamburger.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+        });
+      </script>
 </body>
 </html>

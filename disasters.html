@@ -11,6 +11,7 @@
     <nav class="navbar">
         <div class="container">
             <h1>DART</h1>
+            <div class="hamburger">&#9776;</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="disasters.html">Disasters</a></li>
@@ -92,5 +93,15 @@
             <p>&copy; 2024 Disaster Analysis and Response Team. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.navbar ul');
+      
+        hamburger.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+        });
+      </script>
+      
 </body>
 </html>
