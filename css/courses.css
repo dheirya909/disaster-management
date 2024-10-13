@@ -116,17 +116,47 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    h2 {
+        font-size: 2rem; /* Smaller heading */
+    }
+
     .featured-course {
         flex-direction: column;
         text-align: center;
+        padding: 1.5rem; /* Less padding on mobile */
+    }
+
+    .featured-content h3 {
+        font-size: 1.5rem; /* Smaller course title */
+    }
+
+    .featured-content p {
+        font-size: 1rem; /* Smaller course description */
     }
 
     .featured-image img {
+        max-width: 80%; /* Reduce image size */
         margin-top: 1rem;
     }
 
     .course-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid for smaller items */
+    }
+
+    .course-item {
+        padding: 1.5rem; /* Less padding on course items */
+    }
+
+    .course-item h3 {
+        font-size: 1.2rem; /* Smaller course item title */
+    }
+
+    .course-item p {
+        font-size: 0.9rem; /* Smaller course item description */
+    }
+
+    .btn-secondary {
+        font-size: 0.9rem; /* Smaller button text */
     }
 }
 
